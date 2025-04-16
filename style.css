@@ -78,7 +78,7 @@ body {
     margin-top: 5px;
     padding: 5px;
     font-size: 15px;
-    max-width: 500px; 
+    width: 500px; 
     text-align: center;
     border-bottom: 2px solid #ffff; 
     border-radius: 5px;
