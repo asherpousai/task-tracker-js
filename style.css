@@ -30,6 +30,12 @@ body {
     align-items: center;
 }
 
+.input-field-wrapper {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 500px; 
+}
+
 #input-field:focus, button:focus {
     outline: none;
 }
@@ -43,12 +49,6 @@ body {
     width: 470px;    
     text-overflow: ellipsis;
     border: 0px solid transparent;
-}
-
-.input-field-wrapper {
-    border: 2px solid black;
-    border-radius: 10px;
-    width: 500px; 
 }
 
 .enter-btn {
@@ -94,14 +94,7 @@ body {
 .task-text {
     width: 350px;
     word-break: break-word;
-    /* background-color: red; */
 }
-
-
-/* #task-list li:hover {
-    cursor: pointer;
-    text-decoration: line-through;
-} */
 
 #task-list li.completed {
     text-decoration: line-through;
@@ -138,10 +131,9 @@ body {
 }
 
 .toggle:hover {
-    background: #f0f0f0;
+    background: rgba(0, 0, 0, 0.1);
 }
 
-/* When the parent li has the completed class, change span background */
 li.completed .toggle {
     background: black;
 }
