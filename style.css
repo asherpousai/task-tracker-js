@@ -3,6 +3,10 @@ body {
     font-family: Poppins, Arial, sans-serif;
 }
 
+big {
+    padding-bottom: 10px;
+}
+
 .container {
     display: flex;
     justify-content: center; 
