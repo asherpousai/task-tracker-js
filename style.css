@@ -1,5 +1,5 @@
 body {
-    background: white;
+    background: lightgoldenrodyellow;
     font-family: Poppins, Arial, sans-serif;
 }
 
@@ -38,11 +38,17 @@ body {
     font-family: Poppins;
     font-size: 15px;
     background: transparent;
-    border: 2px solid black;
-    border-radius: 8px;
     cursor: pointer;
     padding: 8px;
-    width: 500px;    
+    width: 470px;    
+    text-overflow: ellipsis;
+    border: 0px solid transparent;
+}
+
+.input-field-wrapper {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 500px; 
 }
 
 .enter-btn {
@@ -76,13 +82,12 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-top: 5px;
-    padding: 5px;
     font-size: 15px;
     width: 500px; 
     text-align: center;
     border-bottom: 2px solid black; 
-    border-radius: 4px;
-    padding: 3px;
+    border-radius: 0px;
+    padding: 5px 3px ;
     /* background-color: pink; */
 }
 
@@ -100,7 +105,7 @@ body {
 
 #task-list li.completed {
     text-decoration: line-through;
-    color: #a8a8a8;
+    color: #828282;
 }
 
 .delete-btn {
@@ -109,9 +114,9 @@ body {
     font-family: Poppins;
     font-size: 11px;
     background: transparent;
-    border: 0px; 
+    border: 0;
     cursor: pointer;
-    width: 60px;
+    width: 40px;
     height: 31.5px;
 }
 
@@ -124,7 +129,7 @@ body {
 .toggle {
     position: relative;
     left: 10px;
-    background: white;
+    background: transparent;
     border: 2px solid black; 
     border-radius: 5px;
     cursor: pointer;
@@ -133,7 +138,7 @@ body {
 }
 
 .toggle:hover {
-    background: lightgrey;
+    background: #f0f0f0;
 }
 
 /* When the parent li has the completed class, change span background */
