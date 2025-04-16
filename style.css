@@ -80,16 +80,23 @@ body {
     font-size: 15px;
     width: 500px; 
     text-align: center;
-    border-bottom: 2px solid #ffff; 
-    border-radius: 5px;
+    border-bottom: 2px solid black; 
+    border-radius: 4px;
+    padding: 3px;
     /* background-color: pink; */
 }
 
+.task-text {
+    width: 350px;
+    word-break: break-word;
+    /* background-color: red; */
+}
 
-#task-list li:hover {
+
+/* #task-list li:hover {
     cursor: pointer;
     text-decoration: line-through;
-}
+} */
 
 #task-list li.completed {
     text-decoration: line-through;
@@ -123,6 +130,10 @@ body {
     cursor: pointer;
     width: 13px;
     height: 13px;
+}
+
+.toggle:hover {
+    background: lightgrey;
 }
 
 /* When the parent li has the completed class, change span background */

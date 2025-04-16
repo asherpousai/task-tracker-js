@@ -71,8 +71,11 @@ function renderTasks() {
         li.appendChild(toggle);
 
         const taskText = document.createElement('span');
+        taskText.className = 'task-text';
         taskText.textContent = task.text;
         li.appendChild(taskText);
+
+
 
         const delBtn = document.createElement("button");
         delBtn.className = 'delete-btn';
