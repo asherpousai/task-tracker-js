@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Task Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <div class="input-container">
+                <input type="text" id="input-field" name="task" autocomplete="off" placeholder="start writing and press enter to create a task">
+                <button type="button" class="enter-btn" onclick="createTask()">
+                    <img src="images/enter_btn.png" alt="Enter">
+                </button>
+            </div>
+            <div class="task-container">
+                <ul id="task-list"></ul>
+            </div>
+        </div>
+
+        <!-- <button onclick="clearAllTasks()">Clear All</button> -->
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

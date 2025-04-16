@@ -1,0 +1,131 @@
+body {
+    background: white;
+    font-family: Poppins, Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    height: 100vh;           
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.form {
+    margin: auto 65vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.task-container {
+    display: flex;
+    align-items: center;
+}
+
+#input-field:focus, button:focus {
+    outline: none;
+}
+  
+#input-field {
+    font-family: Poppins;
+    font-size: 15px;
+    background: transparent;
+    border: 2px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 8px;
+    width: 500px;    
+}
+
+.enter-btn {
+    font-family: Poppins;
+    font-size: 11px;
+    background: transparent;
+    border: 0px;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 5px;
+    width: 40px;
+    height: 31px;
+    position: relative;
+    margin-left: -43px;
+}
+
+.enter-btn img {
+    margin-top: -0.5px;
+    height: 20px;
+    width: 20px;
+}
+
+#task-list {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+#task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 15px;
+    max-width: 500px; 
+    text-align: center;
+    border-bottom: 2px solid #ffff; 
+    border-radius: 5px;
+    /* background-color: pink; */
+}
+
+
+#task-list li:hover {
+    cursor: pointer;
+    text-decoration: line-through;
+}
+
+#task-list li.completed {
+    text-decoration: line-through;
+    color: #a8a8a8;
+}
+
+.delete-btn {
+    position: static;
+    right: 500px;
+    font-family: Poppins;
+    font-size: 11px;
+    background: transparent;
+    border: 0px; 
+    cursor: pointer;
+    width: 60px;
+    height: 31.5px;
+}
+
+.delete-btn img {
+    height: 20px;
+    width: 20px;
+    pointer-events: none;
+}
+
+.toggle {
+    position: relative;
+    left: 10px;
+    background: white;
+    border: 2px solid black; 
+    border-radius: 5px;
+    cursor: pointer;
+    width: 13px;
+    height: 13px;
+}
+
+/* When the parent li has the completed class, change span background */
+li.completed .toggle {
+    background: black;
+}
